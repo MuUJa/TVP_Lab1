@@ -1,6 +1,6 @@
 ﻿namespace TVP_Lab1
 {
-    partial class Form1
+    partial class Authorization
     {
         /// <summary>
         ///  Required designer variable.
