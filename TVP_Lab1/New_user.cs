@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace TVP_Lab1
 {
@@ -54,7 +56,47 @@ namespace TVP_Lab1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            bool isUserExists = false;
+            string fileUsers = "Accounts\\Users.txt";
+            string filePasswords = "Accounts\\Passwords.txt";
 
+            IEnumerable <string> Users = File.ReadLines(fileUsers);
+            foreach (string User in Users)
+            {
+                if (User == textBox1.Text)
+                {
+                    isUserExists = true;
+                    break;
+                }
+            }
+            if (String.IsNullOrEmpty(textBox1.Text))
+            {
+                
+            }
+            else if (String.IsNullOrEmpty(textBox2.Text))
+            {
+
+            }
+            else if (isUserExists)
+            {
+                
+            }
+            else if (textBox2.Text == textBox3.Text)
+            {
+                File.AppendAllText(fileUsers, textBox1.Text + "\n");
+                File.AppendAllText(filePasswords, textBox2.Text + "\n");
+                this.Close();
+            }
+            else
+            {
+                
+            }
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

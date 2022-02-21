@@ -16,5 +16,10 @@ namespace TVP_Lab1
         {
             InitializeComponent();
         }
+
+        private void User_information_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

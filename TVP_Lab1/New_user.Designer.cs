@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.SuspendLayout();
             // 
             // button3
@@ -47,6 +48,7 @@
             this.button3.TabIndex = 13;
             this.button3.Text = "Cancel";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -64,6 +66,7 @@
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox2.Location = new System.Drawing.Point(263, 91);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(200, 43);
             this.textBox2.TabIndex = 11;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -104,6 +107,7 @@
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox3.Location = new System.Drawing.Point(263, 151);
             this.textBox3.Name = "textBox3";
+            this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(200, 43);
             this.textBox3.TabIndex = 15;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
@@ -119,11 +123,21 @@
             this.label3.Text = "Confirm password:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Location = new System.Drawing.Point(0, 289);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(534, 22);
+            this.statusStrip1.TabIndex = 16;
+            this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip1.Visible = false;
+            // 
             // New_user
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 311);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button3);
@@ -150,5 +164,6 @@
         private Label label1;
         private TextBox textBox3;
         private Label label3;
+        private StatusStrip statusStrip1;
     }
 }
