@@ -59,8 +59,11 @@ namespace TVP_Lab1
             bool isUserExists = false;
             string fileUsers = "Accounts\\Users.txt";
             string filePasswords = "Accounts\\Passwords.txt";
+            string fileNames = "Accounts\\Names.txt";
+            string fileSecondNames = "Accounts\\SecondNames.txt";
+            string fileEmails = "Accounts\\Emails.txt";
 
-            IEnumerable <string> Users = File.ReadLines(fileUsers);
+            string[] Users = File.ReadAllLines(fileUsers);
             foreach (string User in Users)
             {
                 if (User == textBox1.Text)
@@ -71,25 +74,33 @@ namespace TVP_Lab1
             }
             if (String.IsNullOrEmpty(textBox1.Text))
             {
-                
+                toolStripStatusLabel1.Text = "Input username";
+                statusStrip1.Show();
             }
             else if (String.IsNullOrEmpty(textBox2.Text))
             {
-
+                toolStripStatusLabel1.Text = "Input password";
+                statusStrip1.Show();
             }
             else if (isUserExists)
             {
-                
+                toolStripStatusLabel1.Text = "A user with this name already exists";
+                statusStrip1.Show();
             }
             else if (textBox2.Text == textBox3.Text)
             {
                 File.AppendAllText(fileUsers, textBox1.Text + "\n");
                 File.AppendAllText(filePasswords, textBox2.Text + "\n");
+                File.AppendAllText (fileNames, "InputName\n");
+                File.AppendAllText(fileSecondNames, "InputSecondName\n");
+                File.AppendAllText(fileEmails, "InputEmail\n");
+                DialogResult = DialogResult.OK;
                 this.Close();
             }
             else
             {
-                
+                toolStripStatusLabel1.Text = "Passwords don't match";
+                statusStrip1.Show();
             }
             
         }
@@ -97,6 +108,23 @@ namespace TVP_Lab1
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                textBox2.PasswordChar = (char)0;
+                textBox3.PasswordChar = (char)0;
+                checkBox1.Text = "Hide";
+            }
+            else
+            {
+                textBox2.PasswordChar = '*';
+                textBox3.PasswordChar = '*';
+                checkBox1.Text = "Show";
+
+            }
         }
     }
 }
