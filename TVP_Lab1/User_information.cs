@@ -29,7 +29,7 @@ namespace TVP_Lab1
             SecondNames = File.ReadAllLines("Accounts\\SecondNames.txt");
             Emails = File.ReadAllLines("Accounts\\Emails.txt");
 
-            groupBox1.Text = Users[curUser];
+            groupBox1.Text = "Information on " + Users[curUser];
             textBox1.Text = Names[curUser];
             textBox2.Text = SecondNames[curUser];
             textBox3.Text = Emails[curUser];
