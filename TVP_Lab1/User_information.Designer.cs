@@ -49,7 +49,7 @@
             this.textBox3.Location = new System.Drawing.Point(172, 160);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(200, 43);
+            this.textBox3.Size = new System.Drawing.Size(275, 43);
             this.textBox3.TabIndex = 23;
             // 
             // label3
@@ -65,7 +65,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(335, 270);
+            this.button3.Location = new System.Drawing.Point(400, 270);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(170, 45);
             this.button3.TabIndex = 21;
@@ -76,7 +76,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(87, 270);
+            this.button2.Location = new System.Drawing.Point(150, 270);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(170, 45);
             this.button2.TabIndex = 20;
@@ -90,7 +90,7 @@
             this.textBox2.Location = new System.Drawing.Point(172, 100);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(200, 43);
+            this.textBox2.Size = new System.Drawing.Size(275, 43);
             this.textBox2.TabIndex = 19;
             // 
             // label2
@@ -109,7 +109,7 @@
             this.textBox1.Location = new System.Drawing.Point(172, 40);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(200, 43);
+            this.textBox1.Size = new System.Drawing.Size(275, 43);
             this.textBox1.TabIndex = 17;
             // 
             // label1
@@ -127,7 +127,7 @@
             this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox1.Location = new System.Drawing.Point(398, 40);
+            this.checkBox1.Location = new System.Drawing.Point(475, 40);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(97, 42);
             this.checkBox1.TabIndex = 24;
@@ -140,7 +140,7 @@
             this.checkBox2.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox2.Location = new System.Drawing.Point(398, 100);
+            this.checkBox2.Location = new System.Drawing.Point(475, 100);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(97, 42);
             this.checkBox2.TabIndex = 25;
@@ -153,7 +153,7 @@
             this.checkBox3.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox3.Location = new System.Drawing.Point(398, 160);
+            this.checkBox3.Location = new System.Drawing.Point(475, 160);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(97, 42);
             this.checkBox3.TabIndex = 26;
@@ -175,7 +175,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(30, 30);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(516, 220);
+            this.groupBox1.Size = new System.Drawing.Size(600, 220);
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Information on ...";
@@ -184,7 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(581, 349);
+            this.ClientSize = new System.Drawing.Size(684, 341);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);

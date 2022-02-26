@@ -17,11 +17,14 @@ namespace TVP_Lab1
         string[] SecondNames;
         string[] Emails;
         int curUser;
+        Form form1;
 
-        public User_information(int User)
+        public User_information(Form form, int User)
         {
             curUser = User;
-            
+            form1 = form;
+            form1.Hide();
+
             InitializeComponent();
 
             Users = File.ReadAllLines("Accounts\\Users.txt");
@@ -72,11 +75,13 @@ namespace TVP_Lab1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            form1.Show();
             this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            form1.Close();
             this.Close();
         }
     }

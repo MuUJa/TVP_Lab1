@@ -67,8 +67,8 @@ namespace TVP_Lab1
                         if (Passwords[i] == textBoxPassword.Text)
                         {
                             statusStrip1.Hide();
-                            User_information user_Information = new User_information(i);
-                            user_Information.ShowDialog();
+                            User_information user_Information = new User_information(this, i);
+                            user_Information.Show();
                         }
                         else
                         {
